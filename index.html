@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA 微光精品咖啡 | 商業計畫書與品牌提案 (NT$ 1M 預算)</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Serif+TC:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js CDN for Interactive Financial Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/logo.svg" alt="Aura Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">AURA</span>
+          <span class="brand-sub">ARTISAN COFFEE</span>
+        </div>
+      </a>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#concept" class="nav-item">品牌定位</a>
+        <a href="#capex" class="nav-item">百萬預算</a>
+        <a href="#menu" class="nav-item">菜單與毛利</a>
+        <a href="#calculator" class="nav-item highlight-nav">互動財務模擬</a>
+        <a href="#opex" class="nav-item">營運成本</a>
+        <a href="#roadmap" class="nav-item">開店里程碑</a>
+        <a href="#resources" class="nav-item">計畫書雲端連結</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="https://docs.google.com/document/d/1kHnK-9MwHmuhxfUX1q_HMcNb-ddXiTZZjM0yF6c92KE/edit" target="_blank" class="btn btn-outline-gold btn-sm">
+          <i class="fa-brands fa-google-drive"></i> Google Doc
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1VaSTCN6IFz2pRbGfAwAUYOFQTVMn0OImuMsupod7jSU/edit" target="_blank" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-table"></i> Google Sheet
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Header Section -->
+  <header class="hero-section" id="hero">
+    <div class="hero-backdrop"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> 商業營運企劃書 • 2026 Q1 發行
+      </div>
+      
+      <div class="hero-logo-showcase">
+        <img src="assets/logo.svg" alt="Aura Coffee Emblem" class="hero-logo-img">
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="en-serif">AURA ARTISAN COFFEE</span>
+        <span class="zh-serif">微光精品咖啡 • 街角工坊</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        專注極致杯測風味，連結鄰里生活溫度的第三空間。以精實 100 萬新台幣資本，打造高坪效、低風險的當代精品咖啡示範店。
+      </p>
+
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">NT$ 1,000,000</div>
+          <div class="stat-desc">建置啟動總預算 (零負債)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">48 <span class="unit">杯/日</span></div>
+          <div class="stat-desc">營運損益兩平點 (Break-even)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">71.2%</div>
+          <div class="stat-desc">全品項綜合平均毛利率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6.5 <span class="unit">個月</span></div>
+          <div class="stat-desc">目標模型資本回收期 (ROI)</div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#calculator" class="btn btn-gold btn-lg">
+          <i class="fa-solid fa-calculator"></i> 啟動互動財務模擬器
+        </a>
+        <a href="#capex" class="btn btn-glass btn-lg">
+          <i class="fa-solid fa-chart-pie"></i> 探索資本預算拆解
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Concept & Positioning -->
+  <section class="section" id="concept">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BRAND CONCEPT</span>
+        <h2 class="section-title">微光理念與空間戰略</h2>
+        <p class="section-subtitle">打破傳統連鎖咖啡的工業流水線，填補昂貴生硬精品吧檯與日常消費之間的鴻溝</p>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="concept-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3>極致風味，無負擔日常</h3>
+          <p>選用產區微批次單品豆與精品配方豆，提供專業手沖、淺焙濃縮與特調燕麥奶，將百元級精品咖啡無縫融入上班族晨間醒腦與午後補給。</p>
+          <ul class="concept-list">
+            <li><i class="fa-solid fa-check"></i> 產區透明直購生豆</li>
+            <li><i class="fa-solid fa-check"></i> 義大利進口雙孔商用機萃取</li>
+            <li><i class="fa-solid fa-check"></i> 純手工現做歐式常溫烘焙搭配</li>
+          </ul>
+        </div>
+
+        <div class="concept-card highlight-card">
+          <div class="concept-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>12–15 坪黃金高坪效格局</h3>
+          <p>精準鎖定住辦混合成熟商圈角間，規劃「外帶得來速動線」與「14–16 席靜謐內用區」，外帶高周轉率兼顧下午遠距辦公客單價。</p>
+          <ul class="concept-list">
+            <li><i class="fa-solid fa-check"></i> 全店全覆蓋降噪木質暖光設計</li>
+            <li><i class="fa-solid fa-check"></i> 充足插座與企業級高速光纖 Wi-Fi</li>
+            <li><i class="fa-solid fa-check"></i> 獨立 220V 專業電力與淨水軟水系統</li>
+          </ul>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>三大核心客群分時段營收</h3>
+          <p>全日動態客流規劃，早晨外帶衝出穩定現金流，下午內用提升客單與續杯率，假日主攻濾掛包與熟豆零售。</p>
+          <ul class="concept-list">
+            <li><i class="fa-solid fa-check"></i> <strong>07:30–10:30：</strong>晨間外帶通勤族（快、穩、會員點數）</li>
+            <li><i class="fa-solid fa-check"></i> <strong>13:30–17:30：</strong>遠距辦公與自由職業者（續杯折抵）</li>
+            <li><i class="fa-solid fa-check"></i> <strong>週末時段：</strong>單品咖啡愛好者與熟豆/濾掛訂閱</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: CAPEX NT$ 1,000,000 Budget -->
+  <section class="section bg-darker" id="capex">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CAPITAL EXPENDITURE</span>
+        <h2 class="section-title">100 萬啟動資本配置</h2>
+        <p class="section-subtitle">嚴格控管硬體投入，保留 10 萬元 3 個月緊急營運預備金，達到零負債健康經營</p>
+      </div>
+
+      <div class="capex-container">
+        <!-- Visual Progress Breakdown -->
+        <div class="capex-overview-card">
+          <div class="capex-summary-top">
+            <div>
+              <span class="muted-label">總啟動投資額</span>
+              <div class="capex-total-num">NT$ 1,000,000</div>
+            </div>
+            <div class="capex-status-pill">
+              <i class="fa-solid fa-shield-halved"></i> 100% 預算零負債閉環
+            </div>
+          </div>
+
+          <div class="multi-progress-bar">
+            <div class="progress-segment p-renovate" style="width: 32%" title="裝潢工程: 32%"></div>
+            <div class="progress-segment p-equip" style="width: 28%" title="咖啡設備: 28%"></div>
+            <div class="progress-segment p-rent" style="width: 16%" title="租賃押金: 16%"></div>
+            <div class="progress-segment p-reserve" style="width: 10%" title="預備金: 10%"></div>
+            <div class="progress-segment p-inven" style="width: 6%" title="初期物料: 6%"></div>
+            <div class="progress-segment p-brand" style="width: 5%" title="招牌行銷: 5%"></div>
+            <div class="progress-segment p-pos" style="width: 3%" title="POS系統: 3%"></div>
+          </div>
+
+          <div class="capex-legend-grid">
+            <div class="legend-item"><span class="dot p-renovate"></span> 空間裝潢木作 (32%) NT$ 320,000</div>
+            <div class="legend-item"><span class="dot p-equip"></span> 商用咖啡生財設備 (28%) NT$ 280,000</div>
+            <div class="legend-item"><span class="dot p-rent"></span> 3個月店面押金+首月租金 (16%) NT$ 160,000</div>
+            <div class="legend-item"><span class="dot p-reserve"></span> 營運週轉金與緊急儲備 (10%) NT$ 100,000</div>
+            <div class="legend-item"><span class="dot p-inven"></span> 首批熟豆、奶品與包材 (6%) NT$ 60,000</div>
+            <div class="legend-item"><span class="dot p-brand"></span> 招牌設計與開幕行銷 (5%) NT$ 50,000</div>
+            <div class="legend-item"><span class="dot p-pos"></span> iPad POS收銀硬體設定 (3%) NT$ 30,000</div>
+          </div>
+        </div>
+
+        <!-- Detail Table -->
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>項目分類</th>
+                <th>核定預算 (NT$)</th>
+                <th>占比 (%)</th>
+                <th>重點規格與採購細節說明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>店面裝修與吧檯木作</strong></td>
+                <td class="text-gold">NT$ 320,000</td>
+                <td>32.0%</td>
+                <td>訂製木質工作吧檯、220V 專業獨立電箱、軌道照明氛圍燈、14席桌椅及木紋地坪</td>
+              </tr>
+              <tr>
+                <td><strong>專業咖啡生財設備</strong></td>
+                <td class="text-gold">NT$ 280,000</td>
+                <td>28.0%</td>
+                <td>認證翻新雙孔商用義式機、Mahlkönig/Fiorenzato 定量磨豆機、BWT 濾水系統、吧檯下臥式冷藏冰箱</td>
+              </tr>
+              <tr>
+                <td><strong>店面租賃押金與租金</strong></td>
+                <td class="text-gold">NT$ 160,000</td>
+                <td>16.0%</td>
+                <td>房東押金三個月（NT$ 120,000）+ 首月營運租金（NT$ 40,000）</td>
+              </tr>
+              <tr>
+                <td><strong>營運週轉安全儲備金</strong></td>
+                <td class="text-gold">NT$ 100,000</td>
+                <td>10.0%</td>
+                <td>封存作為前三個月抗風險專用現金池，嚴禁挪用於前期裝修追加款</td>
+              </tr>
+              <tr>
+                <td><strong>初期物料與環保包材</strong></td>
+                <td class="text-gold">NT$ 60,000</td>
+                <td>6.0%</td>
+                <td>精品單品生豆/熟豆、鮮乳坊/Oatly 燕麥奶儲備、客製雙層保溫紙杯與隔熱杯套</td>
+              </tr>
+              <tr>
+                <td><strong>品牌形象、招牌與開幕推廣</strong></td>
+                <td class="text-gold">NT$ 50,000</td>
+                <td>5.0%</td>
+                <td>極簡戶外側發光立體招牌、制服圍裙刺繡、在地 Google 地圖與 Instagram 宣傳推播</td>
+              </tr>
+              <tr>
+                <td><strong>POS 收銀系統與硬體設定</strong></td>
+                <td class="text-gold">NT$ 30,000</td>
+                <td>3.0%</td>
+                <td>iPad POS 專用機、熱感發票機、電子錢櫃、掃碼槍、一年期雲端訂閱授權</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>預算總結</th>
+                <th class="text-gold">NT$ 1,000,000</th>
+                <th>100.0%</th>
+                <th>完全契合 100 萬資本規模，財務結構極為穩健</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Menu & Unit Economics -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MENU & UNIT ECONOMICS</span>
+        <h2 class="section-title">菜單工程與單品毛利結構</h2>
+        <p class="section-subtitle">標準化物料用量，創造高達 71.2% 的綜合平均毛利，兼具品味與極高防守性</p>
+      </div>
+
+      <div class="menu-filter-bar">
+        <button class="filter-btn active" data-filter="all">全部商品</button>
+        <button class="filter-btn" data-filter="coffee">義式與單品咖啡</button>
+        <button class="filter-btn" data-filter="bakery">手作甜點烘焙</button>
+        <button class="filter-btn" data-filter="retail">伴手禮盒與熟豆</button>
+      </div>
+
+      <div class="menu-cards-grid" id="menuCardsContainer">
+        <!-- Item 1 -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div>
+              <h4>經典黑咖啡 Classic Americano</h4>
+              <span class="menu-cat-badge">義式濃縮系列 (12oz)</span>
+            </div>
+            <div class="menu-price">NT$ 90</div>
+          </div>
+          <p class="menu-desc">微光特調配方豆（耶加雪菲 + 哥倫比亞），柑橘花香與可可堅果餘韻。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>食材成本:</span> <strong>NT$ 18</strong></div>
+            <div class="unit-metric"><span>外帶杯材:</span> <strong>NT$ 6</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>73.3%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div>
+              <h4>經典拿鐵 / 馥芮白 Cafe Latte / Flat White</h4>
+              <span class="menu-cat-badge">義式奶咖系列 (12oz)</span>
+            </div>
+            <div class="menu-price">NT$ 130</div>
+          </div>
+          <p class="menu-desc">精準溫控 62°C 蒸氣綿密奶泡，融合濃縮黑巧克力與香醇太妃糖甜感。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>食材成本:</span> <strong>NT$ 34</strong></div>
+            <div class="unit-metric"><span>外帶杯材:</span> <strong>NT$ 6</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>69.2%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div>
+              <h4>燕麥奶香草拿鐵 Oat Vanilla Latte</h4>
+              <span class="menu-cat-badge">植物奶特調</span>
+            </div>
+            <div class="menu-price">NT$ 150</div>
+          </div>
+          <p class="menu-desc">進口特濃燕麥奶搭配天然香草莢熬煮糖漿，植物蛋白細緻絲滑。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>食材成本:</span> <strong>NT$ 42</strong></div>
+            <div class="unit-metric"><span>外帶杯材:</span> <strong>NT$ 6</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>68.0%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div>
+              <h4>衣索比亞 耶加雪菲 G1 水洗</h4>
+              <span class="menu-cat-badge">單品手沖精品系列</span>
+            </div>
+            <div class="menu-price">NT$ 160</div>
+          </div>
+          <p class="menu-desc">微型小農水洗處理，茉莉花香、黃檸檬與蜂蜜紅茶般清澈酸甜平衡。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>食材成本:</span> <strong>NT$ 38</strong></div>
+            <div class="unit-metric"><span>專用包材:</span> <strong>NT$ 4</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>73.8%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div>
+              <h4>24小時威士忌酒桶冷萃 Cold Brew</h4>
+              <span class="menu-cat-badge">慢速萃取特調</span>
+            </div>
+            <div class="menu-price">NT$ 140</div>
+          </div>
+          <p class="menu-desc">低溫滴濾浸漬24小時，帶有濃郁熟果、威士忌橡木桶發酵香氣，圓潤不酸澀。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>食材成本:</span> <strong>NT$ 28</strong></div>
+            <div class="unit-metric"><span>瓶罐包材:</span> <strong>NT$ 7</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>75.0%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-card" data-category="bakery">
+          <div class="menu-card-header">
+            <div>
+              <h4>焦糖肉桂捲 / 波爾多可麗露</h4>
+              <span class="menu-cat-badge">每日手作常溫烘焙</span>
+            </div>
+            <div class="menu-price">NT$ 95</div>
+          </div>
+          <p class="menu-desc">外酥內嫩的香草蘭姆酒可麗露，以及手炒黑糖黑核桃肉桂捲，下午茶必備。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>烘焙成本:</span> <strong>NT$ 32</strong></div>
+            <div class="unit-metric"><span>防油提袋:</span> <strong>NT$ 3</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>63.2%</strong></div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-card" data-category="retail">
+          <div class="menu-card-header">
+            <div>
+              <h4>精品莊園濾掛分享禮盒 (10入)</h4>
+              <span class="menu-cat-badge">客製零售禮盒</span>
+            </div>
+            <div class="menu-price">NT$ 380</div>
+          </div>
+          <p class="menu-desc">5款精選產區莊園豆充氮保鮮，辦公室白領居家泡咖啡首選伴手禮。</p>
+          <div class="unit-breakdown">
+            <div class="unit-metric"><span>熟豆磨粉:</span> <strong>NT$ 95</strong></div>
+            <div class="unit-metric"><span>燙金精盒:</span> <strong>NT$ 25</strong></div>
+            <div class="unit-metric margin-tag"><span>毛利率:</span> <strong>68.4%</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Interactive Financial Simulator -->
+  <section class="section bg-darker" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">INTERACTIVE SIMULATION</span>
+        <h2 class="section-title">互動式財務試算與損益模擬器</h2>
+        <p class="section-subtitle">拖動滑桿即時計算不同出杯量與客單價之月營收、成本支出、月淨利及回本時間</p>
+      </div>
+
+      <div class="simulator-wrapper">
+        <!-- Controls Column -->
+        <div class="sim-controls-card">
+          <h3 class="sim-card-title"><i class="fa-solid fa-sliders"></i> 營運參數調控</h3>
+          
+          <!-- Slider 1 -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="cupSlider">每日平均出杯量</label>
+              <span class="slider-val-badge" id="cupVal">90 杯/天</span>
+            </div>
+            <input type="range" id="cupSlider" min="30" max="160" value="90" step="5" class="custom-slider">
+            <div class="slider-ticks">
+              <span>30 (淡季)</span>
+              <span class="text-gold">48 (損益平衡)</span>
+              <span>65 (保守)</span>
+              <span class="text-active">90 (目標)</span>
+              <span>120+ (樂觀)</span>
+            </div>
+          </div>
+
+          <!-- Slider 2 -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="spendSlider">每位顧客平均客單價</label>
+              <span class="slider-val-badge" id="spendVal">NT$ 150</span>
+            </div>
+            <input type="range" id="spendSlider" min="100" max="240" value="150" step="5" class="custom-slider">
+            <div class="slider-ticks">
+              <span>NT$ 100</span>
+              <span>NT$ 150 (標準)</span>
+              <span>NT$ 180 (搭甜點)</span>
+              <span>NT$ 240</span>
+            </div>
+          </div>
+
+          <!-- Slider 3 -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="daySlider">每月營業天數</label>
+              <span class="slider-val-badge" id="dayVal">30 天</span>
+            </div>
+            <input type="range" id="daySlider" min="26" max="31" value="30" step="1" class="custom-slider">
+          </div>
+
+          <!-- Quick Scenario Buttons -->
+          <div class="quick-scenarios">
+            <span class="quick-title">一鍵套用計畫書預設情境：</span>
+            <div class="scenario-buttons">
+              <button class="btn btn-xs btn-outline" onclick="applyPreset(48, 150)">損益兩平 (48杯)</button>
+              <button class="btn btn-xs btn-outline" onclick="applyPreset(65, 150)">保守模型 (65杯)</button>
+              <button class="btn btn-xs btn-gold" onclick="applyPreset(90, 150)">目標模型 (90杯)</button>
+              <button class="btn btn-xs btn-outline" onclick="applyPreset(120, 150)">旺季樂觀 (120杯)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-Time Metrics Column -->
+        <div class="sim-results-card">
+          <h3 class="sim-card-title"><i class="fa-solid fa-chart-line"></i> 即時財務回饋分析</h3>
+          
+          <div class="metrics-kpi-grid">
+            <div class="kpi-box primary-kpi">
+              <div class="kpi-label">預估每月總營收 (Monthly Revenue)</div>
+              <div class="kpi-number" id="calcRevenue">NT$ 405,000</div>
+              <div class="kpi-sub" id="calcDailyRevenue">每日平均營收: NT$ 13,500</div>
+            </div>
+
+            <div class="kpi-box profit-kpi">
+              <div class="kpi-label">預估每月淨利潤 (Net Monthly Profit)</div>
+              <div class="kpi-number text-success" id="calcNetProfit">+NT$ 167,000</div>
+              <div class="kpi-sub">
+                淨利率: <strong id="calcMarginPct">41.2%</strong>
+              </div>
+            </div>
+
+            <div class="kpi-box">
+              <div class="kpi-label">總營運費用 (Total OPEX + COGS)</div>
+              <div class="kpi-number text-danger" id="calcTotalCost">NT$ 238,000</div>
+              <div class="kpi-sub" id="calcCostBreakdown">食材銷貨: 11.3萬 | 固定開銷: 12.5萬</div>
+            </div>
+
+            <div class="kpi-box">
+              <div class="kpi-label">預估資本回收期 (ROI Payback)</div>
+              <div class="kpi-number text-gold" id="calcPayback">~6.0 個月</div>
+              <div class="kpi-sub">本金: NT$ 1,000,000</div>
+            </div>
+          </div>
+
+          <!-- Dynamic Live Chart -->
+          <div class="chart-container-box">
+            <canvas id="liveScenarioChart" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Monthly OPEX -->
+  <section class="section" id="opex">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">OPERATING EXPENDITURES</span>
+        <h2 class="section-title">每月固定與變動營運支出 (OPEX)</h2>
+        <p class="section-subtitle">以創辦人兼店長親力親為模式，將月度固定開銷壓至 23 萬元以內，守住安全現金流</p>
+      </div>
+
+      <div class="opex-grid">
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-house"></i></span>
+            <h4>店面固定租金</h4>
+            <span class="opex-cost">NT$ 40,000 / 月</span>
+          </div>
+          <p>12–15 坪商圈街邊店租金，占總營收約 9.8%（低於業界 15% 警示線）。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-user-group"></i></span>
+            <h4>人事薪資與勞健保</h4>
+            <span class="opex-cost">NT$ 75,000 / 月</span>
+          </div>
+          <p>1 位全職咖啡師（NT$ 38,000）+ 計時兼職（180小時 @ NT$ 190/hr）+ 勞退與健保負擔。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-bolt"></i></span>
+            <h4>營業水電瓦斯</h4>
+            <span class="opex-cost">NT$ 18,000 / 月</span>
+          </div>
+          <p>義式咖啡鍋爐 220V 連續保溫加熱、夏季空調雙機、專業冷凍冷藏與淨水排水系統。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-wheat-awn"></i></span>
+            <h4>食材與生鮮物料 (COGS)</h4>
+            <span class="opex-cost">約 NT$ 68,000 起</span>
+          </div>
+          <p>隨出杯量變動之原物料（精品熟豆、鮮乳坊鮮奶、Oatly 燕麥奶、烘焙半成品）。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-box"></i></span>
+            <h4>耗材包材與清潔洗劑</h4>
+            <span class="opex-cost">NT$ 12,000 / 月</span>
+          </div>
+          <p>專用紙杯、防漏杯蓋、濾紙、杯套、食品級義式機逆洗專用酵素粉、抹布洗劑。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-bullhorn"></i></span>
+            <h4>在地社群與行銷推廣</h4>
+            <span class="opex-cost">NT$ 8,000 / 月</span>
+          </div>
+          <p>Google 商家地圖在地優化、Instagram 視覺貼文推播、會員集點回饋禮遇。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-wifi"></i></span>
+            <h4>軟硬體維護與光纖</h4>
+            <span class="opex-cost">NT$ 5,000 / 月</span>
+          </div>
+          <p>BWT 濾芯攤提更換、POS 雲端主機授權金、高速光纖商業寬頻線路。</p>
+        </div>
+
+        <div class="opex-item-card">
+          <div class="opex-header">
+            <span class="opex-icon"><i class="fa-solid fa-shield-virus"></i></span>
+            <h4>雜支與刷卡手續費預備</h4>
+            <span class="opex-cost">NT$ 6,000 / 月</span>
+          </div>
+          <p>多元行動支付（Line Pay、Apple Pay 2-2.5% 手續費）、零星器皿耗損修繕。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: 12-Month Roadmap -->
+  <section class="section bg-darker" id="roadmap">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EXECUTION ROADMAP</span>
+        <h2 class="section-title">12 個月開店籌備與盈利進程</h2>
+        <p class="section-subtitle">階段性里程碑清晰規劃，確保按時開業並於初年度實現盈利轉正</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-item">
+          <div class="timeline-marker">M1</div>
+          <div class="timeline-content">
+            <h4>第 1 個月：選址簽約與法定公司設立</h4>
+            <p>鎖定目標住辦商圈完成租賃公證；辦理商業登記、稅籍統一編號；通過衛生局食品業者登錄；室內平立面水電 CAD 圖紙定稿。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">M2</div>
+          <div class="timeline-content">
+            <h4>第 2 個月：工程裝修與生財設備進場</h4>
+            <p>吧檯水電泥作進場施工、220V 專線放線；雙孔商用機進場定位；BWT 軟水過濾測試；木質桌椅軟裝及音響燈光就位。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">M3</div>
+          <div class="timeline-content">
+            <h4>第 3 個月：菜單校正、試營運 (Soft Opening)</h4>
+            <p>咖啡師雙人萃取標準差訓練；親友試營運反饋蒐集；開通 Google Maps 在地商家驗證與 LINE 官方會員集點卡。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">M4-6</div>
+          <div class="timeline-content">
+            <h4>第 4–6 個月：正式開幕與商辦企業訂閱推廣</h4>
+            <p>舉辦開幕拿鐵買一送一週慶；開展周邊 500 公尺企業辦公室每週濾掛包箱購與會議咖啡外送服務，出杯量突破每日 80 杯。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">M7-12</div>
+          <div class="timeline-content">
+            <h4>第 7–12 個月：獲利最佳化與初期百萬本金全額回收</h4>
+            <p>推出季節限定單品豆禮盒；穩定維持 90–100 杯/日水準；月營收站穩 40 萬大關，預計第 7~9 個月累積完全回收 NT$ 1,000,000 投資額。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Cloud Documents & Resources -->
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">OFFICIAL CLOUD ASSETS</span>
+        <h2 class="section-title">雲端文件與試算表專區</h2>
+        <p class="section-subtitle">本計畫書所有內容均已同步至 Google 雲端，支援線上即時檢閱、協作與備份</p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card doc-card">
+          <div class="resource-icon">
+            <i class="fa-solid fa-file-word"></i>
+          </div>
+          <h3>Google Docs 完整商業計畫書</h3>
+          <p>內含執行摘要、客群畫像、完整百萬設備預算表、法規風險評估與高解析圖表。</p>
+          <div class="resource-meta">
+            <span><i class="fa-solid fa-check"></i> 已排版專業視覺圖表</span>
+            <span><i class="fa-solid fa-check"></i> 隨時支援 PDF 導出</span>
+          </div>
+          <a href="https://docs.google.com/document/d/1kHnK-9MwHmuhxfUX1q_HMcNb-ddXiTZZjM0yF6c92KE/edit" target="_blank" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-up-right-from-square"></i> 開啟 Google Doc 計畫書
+          </a>
+        </div>
+
+        <div class="resource-card sheet-card">
+          <div class="resource-icon">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h3>Google Sheets 動態財務模型</h3>
+          <p>內含 4 大工作表分頁：CAPEX 預算分配表、單品毛利結構、每月 OPEX、多情境財務損益模型與即時圖表。</p>
+          <div class="resource-meta">
+            <span><i class="fa-solid fa-check"></i> 完整內建公式自動運算</span>
+            <span><i class="fa-solid fa-check"></i> 內嵌 3 款原生試算表圖表</span>
+          </div>
+          <a href="https://docs.google.com/spreadsheets/d/1VaSTCN6IFz2pRbGfAwAUYOFQTVMn0OImuMsupod7jSU/edit" target="_blank" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-up-right-from-square"></i> 開啟 Google Sheet 財務表
+          </a>
+        </div>
+      </div>
+      
+      <!-- Brand Logo Download Showcase -->
+      <div class="brand-kit-box">
+        <div class="brand-kit-content">
+          <span class="section-tag">BRAND IDENTITY</span>
+          <h3>AURA 品牌識別標誌 (Official Logo)</h3>
+          <p>結合日光微光 (Aura) 與咖啡豆的典雅幾何線條，象徵溫暖、職人淬鍊與純粹之美。現已產出高解析向量 SVG 與印刷級圖檔。</p>
+          <div class="brand-buttons">
+            <a href="assets/logo.svg" download="Aura_Coffee_Logo.svg" class="btn btn-outline-gold">
+              <i class="fa-solid fa-download"></i> 下載向量 Logo (SVG)
+            </a>
+            <a href="assets/logo.jpg" download="Aura_Coffee_Logo.jpg" class="btn btn-glass">
+              <i class="fa-solid fa-image"></i> 下載高清圖檔 (JPG)
+            </a>
+          </div>
+        </div>
+        <div class="brand-kit-visual">
+          <img src="assets/logo.svg" alt="Aura Logo Badge" class="brand-preview-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="en-serif">AURA ARTISAN COFFEE</span>
+          <span class="zh-serif">微光精品咖啡</span>
+        </div>
+        <p class="footer-note">
+          100 萬新台幣精品咖啡店創業計畫書 • 專為創辦合夥人與投資人評估設計
+        </p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#concept">理念</a>
+          <a href="#capex">預算</a>
+          <a href="#menu">菜單</a>
+          <a href="#calculator">模擬器</a>
+          <a href="https://docs.google.com/document/d/1kHnK-9MwHmuhxfUX1q_HMcNb-ddXiTZZjM0yF6c92KE/edit" target="_blank">Google Docs</a>
+          <a href="https://docs.google.com/spreadsheets/d/1VaSTCN6IFz2pRbGfAwAUYOFQTVMn0OImuMsupod7jSU/edit" target="_blank">Google Sheets</a>
+        </div>
+        <div class="copyright">
+          © 2026 Aura Artisan Coffee. All Rights Reserved. Confidential Business Proposal.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
