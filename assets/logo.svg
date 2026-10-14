@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D592" />
+      <stop offset="50%" stop-color="#D4A359" />
+      <stop offset="100%" stop-color="#A27128" />
+    </linearGradient>
+    <linearGradient id="auraGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A359" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#24140E" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle Badge -->
+  <circle cx="250" cy="250" r="235" fill="#1C100B" stroke="url(#goldGrad)" stroke-width="4" />
+  <circle cx="250" cy="250" r="222" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6" />
+  
+  <!-- Aura Radiant Light Rays -->
+  <g stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4">
+    <line x1="250" y1="45" x2="250" y2="70" />
+    <line x1="250" y1="210" x2="250" y2="185" />
+    <line x1="165" y1="125" x2="180" y2="140" />
+    <line x1="335" y1="125" x2="320" y2="140" />
+    <line x1="130" y1="128" x2="155" y2="128" />
+    <line x1="370" y1="128" x2="345" y2="128" />
+    <line x1="190" y1="70" x2="202" y2="88" />
+    <line x1="310" y1="70" x2="298" y2="88" />
+  </g>
+
+  <!-- Central Glowing Halo -->
+  <circle cx="250" cy="135" r="50" fill="url(#auraGlow)" />
+
+  <!-- Coffee Bean & Steam Emblem -->
+  <g transform="translate(250, 135)">
+    <!-- Stylized Coffee Bean Left -->
+    <path d="M -2, -38 C -22,-34 -38,-18 -38,8 C -38,28 -22,44 -2,46 C -12,30 -14,-15 -2,-38 Z" fill="url(#goldGrad)" />
+    <!-- Stylized Coffee Bean Right -->
+    <path d="M 2, -38 C 22,-34 38,-18 38,8 C 38,28 22,44 2,46 C 12,30 14,-15 2,-38 Z" fill="url(#goldGrad)" />
+    <!-- Center S-Curve Division / Creep -->
+    <path d="M 0,-40 C -8,-15 8,15 0,46" fill="none" stroke="#1C100B" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Gentle Steam Wisps -->
+    <path d="M -12, -45 C -18,-58 -8,-68 -14,-78" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <path d="M 2, -48 C -4,-62 6,-72 0,-85" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 16, -45 C 10,-58 20,-68 14,-78" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- Decorative Laurel / Stars -->
+  <g fill="url(#goldGrad)">
+    <polygon points="250,230 253,237 260,237 254,242 256,249 250,245 244,249 246,242 240,237 247,237" transform="scale(0.8) translate(62, 50)" />
+    <polygon points="210,235 212,240 217,240 213,243 214,248 210,245 206,248 207,243 203,240 208,240" transform="scale(0.7) translate(90, 75)" opacity="0.7" />
+    <polygon points="290,235 292,240 297,240 293,243 294,248 290,245 286,248 287,243 283,240 288,240" transform="scale(0.7) translate(125, 75)" opacity="0.7" />
+  </g>
+
+  <!-- Typography: AURA -->
+  <text x="250" y="320" 
+        font-family="'Cinzel', 'Playfair Display', 'Times New Roman', Georgia, serif" 
+        font-size="64" 
+        font-weight="700" 
+        letter-spacing="14" 
+        fill="url(#goldGrad)" 
+        text-anchor="middle">AURA</text>
+
+  <!-- Divider Line -->
+  <line x1="140" y1="345" x2="360" y2="345" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.7" />
+  <circle cx="250" cy="345" r="3.5" fill="url(#goldGrad)" />
+
+  <!-- Typography: ARTISAN COFFEE -->
+  <text x="250" y="375" 
+        font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="18" 
+        font-weight="600" 
+        letter-spacing="8" 
+        fill="#E8DDD3" 
+        text-anchor="middle">ARTISAN COFFEE</text>
+
+  <!-- Typography: 微光精品咖啡 -->
+  <text x="250" y="415" 
+        font-family="'Noto Serif TC', 'Songti TC', 'PingFang TC', serif" 
+        font-size="16" 
+        font-weight="400" 
+        letter-spacing="9" 
+        fill="url(#goldGrad)" 
+        text-anchor="middle">微 光 精 品 咖 啡</text>
+
+  <!-- Established Year -->
+  <text x="250" y="445" 
+        font-family="'Montserrat', sans-serif" 
+        font-size="10.5" 
+        letter-spacing="4" 
+        fill="#9A8374" 
+        text-anchor="middle">EST. 2026 • TAIPEI</text>
+</svg>
